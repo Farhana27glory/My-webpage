@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<title>My Webpage 2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 140px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 650px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <!--<img src="image1.jpg" style="width:100%"> -->
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-camera w3-xxlarge"></i>
+    <p>SKILLS</p>
+  </a>
+  <a href="#workexperience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-gear w3-xxlarge"></i>
+    <p>WORK EXPERIENCE</p>
+  </a>
+  <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>EDUCATION</p>
+  </a>
+  <a href="#research" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-book w3-xxlarge"></i>
+    <p>RESEARCH</p>
+  </a>
+  <a href="#publication" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-print w3-xxlarge"></i>
+    <p>PUBLICATION</p>
+  </a>
+  <a href="#achievement" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-trophy w3-xxlarge"></i>
+    <p>ACHIEVEMENT</p>
+  </a>
+  <a href="#interest" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>INTEREST</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+  
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#skills" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
+    <a href="#workexperience" class="w3-bar-item w3-button" style="width:25% !important">WORK EXPERIENCE</a>
+	<a href="#education" class="w3-bar-item w3-button" style="width:25% !important">EDUCATION</a>
+    <a href="#research" class="w3-bar-item w3-button" style="width:25% !important">RESEARCH</a>
+    <a href="#publication" class="w3-bar-item w3-button" style="width:25% !important">PUBLICATION</a>
+    <a href="#achievement" class="w3-bar-item w3-button" style="width:25% !important">ACHIEVEMENT</a>
+	<a href="#interest" class="w3-bar-item w3-button" style="width:25% !important">INTEREST</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-64 w3-center w3-black" id="home">
+    <h1 class="w3-xxlarge"><span class="w3-hide-small"></span> Farhana Zaman Glory</h1>
+    <p><h3>Sotfware Engineer, IQVIA</h3></p>
+    <!--<img src="111.jpg" alt="boy" class="w3-image" width="992" height="1108"> -->
+  </header>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="27.JPG" alt="Los Angeles" width="800" height="200">
+      </div>
+      <div class="carousel-item">
+        <img src="77.JPG" alt="Chicago" width="800" height="200">
+      </div>
+      <div class="carousel-item">
+        <img src="99.jpg" alt="New York" width="800" height="200">
+      </div>
+      <div class="carousel-item">
+        <img src="33.jpg" alt="New York" width="800" height="200">
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Intro</h2>
+    <p class="w3-large w3-text-teal">I am Farhana Zaman Glory, a B.Sc. engineer on Computer Science Engineering from Bangladesh University of Engineering & Technology of Bangladesh. I am a fast learner and hard worker on the topics those I love. I am interested in research and project works. Through hard work
+and devotion I want to be a part of the advanced technology that will ensure the best utilization of my academic talents. I have the skills to survive in extreme environment.
+I am sincere, patient, active, flexible, agile and creative.
+    </p>
+	
+	<button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"><a href="./Resume(CV)_Farhana Zaman Glory.pdf" download>Download Resume</a></i>
+    </button>
+	
+	
+	<div class="w3-padding-64 w3-content" id="skills">
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-large">Database Management</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-large">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+    </div>
+    <p class="w3-large">BI Tool Intelligence</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div><br>
+    
+	      <h3 class="w3-padding-16 w3-text-light-grey">Programming Language Skills</h3>
+          <p class="w3-large">MySQL, ORACLE & PL/SQL</p>
+          <div class="w3-white w3-round-xlarge">
+            <div class="w3-round-xlarge w3-dark-grey" style="height:24px;width:85%"></div>
+          </div>
+          <p class="w3-large">Javascript, HTML & CSS</p>
+          <div class="w3-white w3-round-xlarge">
+            <div class="w3-round-xlarge w3-dark-grey" style="height:24px;width:80%"></div>
+          </div>
+          <p class="w3-large">C, C++ & Java</p>
+          <div class="w3-white w3-round-xlarge">
+            <div class="w3-round-xlarge w3-dark-grey" style="height:24px;width:70%"></div>
+          </div>
+		  <p class="w3-large">Matlab</p>
+          <div class="w3-white w3-round-xlarge">
+            <div class="w3-round-xlarge w3-dark-grey" style="height:24px;width:50%"></div>
+          </div>
+		  <p class="w3-large">Python</p>
+          <div class="w3-white w3-round-xlarge">
+            <div class="w3-round-xlarge w3-dark-grey" style="height:24px;width:50%"></div>
+          </div>
+	
+	</div>
+
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="workexperience">
+    <h2 class="w3-text-light-grey">My Work Experience</h2>
+
+
+    <!-- Grid for photos -->
+    <p class="w3-large w3-text-teal">I am currently working in a Multi National Software Company named <a href="https://www.quintilesims.com" target="_blank"><span class="w3-tag w3-dark-grey w3-round">"QuintilesIMS"</span></a> I have started my career
+	here in 2014 and till now I am working here. I have been working with SSIS, SSAS, SQL Server, version controlling, developing websites and learning 
+	Business Intelligence tools. My work is focussed mainly on pharmaseutical data analysis and management.</p>
+    
+	
+  </div>
+  
+  
+  <div class="w3-padding-64 w3-content" id="education">
+    <h2 class="w3-text-light-grey">My Education</h2>
+      <br>
+       <div class="w3-container">
+          <h5 class="w3-opacity"><b>Bangladesh University of Engineering & Technology</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July, 2014</h6>
+          <p>
+		     <aside>
+		       <blockquote>B.Sc. on Computer Science & Engineering</blockquote>
+		     </aside>
+		  </p>
+		  <br>
+	   </div>
+       
+	   
+	   <div class="w3-container">
+          <h5 class="w3-opacity"><b>Ideal School & College</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008</h6>
+          <p>
+		    <aside>
+		       <blockquote>Higher Secondary Certification (H.S.C.)</blockquote>
+			</aside>
+		  </p>
+         <br>
+	   </div>
+       
+	   
+	   <div class="w3-container">
+          <h5 class="w3-opacity"><b>Ideal School & College</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2006</h6>
+          <p>
+		     <aside>
+		       <blockquote>Secondary School Certification (S.S.C.)</blockquote>
+		     </aside>
+		  </p>
+		  <br>
+       </div>
+     
+	 </div>
+    
+   <div class="w3-padding-64 w3-content" id="research">
+    <h2 class="w3-text-light-grey">My Research Work</h2>
+	<br>
+	<br>
+    <h5 class="w3-text-teal"><i class="fa fa-star fa-fw w3-margin-right"></i>I have done my final year research on “Protein Tertiary Structure Retrieval
+Algorithm” under the supervision of renowned Professor of BUET, Dr. Md. Abul Kashem Mia. We have discovered an extremely fast and highly accurate method of retrieving tertiary
+proteins from a large database based on computer vision. The speed and accuracy of this come from the two newly introduced features: the co-occurrence matrix of the
+oriented gradient and pyramid histogram of oriented gradient and the use of Euclidean distance.</h5>
+    <br>
+    <h5 class="w3-text-teal"><i class="fa fa-star fa-fw w3-margin-right"></i>I have also developed a cost effective Education Model to improve learning 
+	environment for poor children in developing regions.</h5>
+    
+  </div>
+  
+  
+  <div class="w3-padding-64 w3-content" id="publication">
+    <h2 class="w3-text-light-grey">My Publications</h2>
+	<br>
+	<br>
+    <h5 class="w3-text-teal"><i class="fa fa-star fa-fw w3-margin-right"></i>I have done my final year research on “Protein Tertiary Structure Retrieval
+Algorithm” under the supervision of renowned Professor of BUET, Dr. Md. Abul Kashem Mia. We have discovered an extremely fast and highly accurate method of retrieving tertiary
+proteins from a large database based on computer vision. The speed and accuracy of this come from the two newly introduced features: the co-occurrence matrix of the
+oriented gradient and pyramid histogram of oriented gradient and the use of Euclidean distance.</h5>
+    <br>
+    <h5 class="w3-text-teal"><i class="fa fa-star fa-fw w3-margin-right"></i>I have also developed a cost effective Education Model to improve learning 
+	environment for poor children in developing regions.</h5>
+    
+  </div>
+
+  <div class="w3-padding-64 w3-content" id="achievement">
+    <h2 class="w3-text-light-grey">My Achievements</h2>
+	<br>
+	<br>
+    <h5 class="w3-text-teal"><i class="fa fa-star fa-fw w3-margin-right"></i>I have received Talentpool scholarship in Junior School Certificate Examination</h5>
+    <br>
+    <h5 class="w3-text-teal"><i class="fa fa-star fa-fw w3-margin-right"></i>I obtained 4th position in Dhaka board in Junior School Certificate Examination</h5>
+    <br>
+    <h5 class="w3-text-teal"><i class="fa fa-star fa-fw w3-margin-right"></i>I have received Talentpool scholarship in Secondary School Certificate Examination</h5>
+    <br>
+    <h5 class="w3-text-teal"><i class="fa fa-star fa-fw w3-margin-right"></i>I obtained 11th position in Dhaka board in Secondary School Certificate Examination</h5>
+    <br>
+    <h5 class="w3-text-teal"><i class="fa fa-star fa-fw w3-margin-right"></i>I have received Talentpool scholarship in Higher Secondary School Certificate Examination</h5>
+    <br>
+    <h5 class="w3-text-teal"><i class="fa fa-star fa-fw w3-margin-right"></i>I obtained "Best Paper Award" in Bioinformatics conference BIOS Stringology in BUET</h5>
+    <br>
+    <h5 class="w3-text-teal"><i class="fa fa-star fa-fw w3-margin-right"></i>I achieved "Pat on the back" award in IQVIA for outstanding performance in project work</h5>
+    <br>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
